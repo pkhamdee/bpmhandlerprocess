@@ -12,6 +12,7 @@
       <groupId>com.test.bpmtest.jbpm.workitemhandler</groupId>
       <artifactId>hello-workitemhandler</artifactId>
       <version>1.0</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <repositories>
