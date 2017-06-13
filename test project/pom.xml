@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.test</groupId>
   <artifactId>bpmtest</artifactId>
-  <version>1.0.0-</version>
+  <version>1.0.0-s</version>
   <packaging>kjar</packaging>
   <name>test project</name>
   <repositories>
