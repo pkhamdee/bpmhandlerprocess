@@ -9,16 +9,22 @@
     <event-listeners>
         <event-listener>
             <resolver>reflection</resolver>
-            <identifier>org.jbpm.process.instance.insurance.listeners.CustomProcessEventListener</identifier>
+            <identifier>com.test.jbpm.listeners.CustomProcessEventListener</identifier>
             <parameters/>
         </event-listener>
     </event-listeners>
-    <task-event-listeners/>
+    <task-event-listeners>
+        <task-event-listener>
+            <resolver>reflection</resolver>
+            <identifier>com.test.jbpm.listeners.CustomTaskListnersService</identifier>
+            <parameters/>
+        </task-event-listener>
+    </task-event-listeners>
     <globals/>
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.test.bpmtest.jbpm.workitemhandler.HelloWorkItemHandler()</identifier>
+            <identifier>new com.test.jbpm.workitemhandlers.HelloWorkItemHandler()</identifier>
             <parameters/>
             <name>HelloWorld</name>
         </work-item-handler>
