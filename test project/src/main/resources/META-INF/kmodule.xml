@@ -2,7 +2,7 @@
   <kbase name="kbase1" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="*">
     <ksession name="kbase1-session" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
-        <workItemHandler type="com.test.bpmtest.jbpm.workitemhandler.HelloWorkItemHandler" name="HelloWorkItemHandler"/>
+        <workItemHandler type="com.test.jbpm.workitemhandlers.HelloWorkItemHandler" name="HelloWorkItemHandler"/>
       </workItemHandlers>
     </ksession>
   </kbase>
