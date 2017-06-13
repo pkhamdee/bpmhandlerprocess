@@ -1,5 +1,9 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <kbase name="kbase1" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="*">
-    <ksession name="kbase1-session" type="stateless" default="true" clockType="realtime"/>
+    <ksession name="kbase1-session" type="stateless" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="com.test.bpmtest.jbpm.workitemhandler.HelloWorkItemHandler" name="HelloWorkItemHandler"/>
+      </workItemHandlers>
+    </ksession>
   </kbase>
 </kmodule>
