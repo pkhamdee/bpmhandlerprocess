@@ -10,7 +10,7 @@
     <task-event-listeners>
         <task-event-listener>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.instance.insurance.listeners.ProcessListenersService(ksession)</identifier>
+            <identifier>new org.jbpm.process.instance.insurance.listeners.CustomTaskListnersService(runtimeManager)</identifier>
             <parameters/>
         </task-event-listener>
     </task-event-listeners>
