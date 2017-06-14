@@ -6,13 +6,7 @@
     <persistence-mode>JPA</persistence-mode>
     <runtime-strategy>SINGLETON</runtime-strategy>
     <marshalling-strategies/>
-    <event-listeners>
-        <event-listener>
-            <resolver>mvel</resolver>
-            <identifier>new com.test.jbpm.listeners.CustomProcessEventListener()</identifier>
-            <parameters/>
-        </event-listener>
-    </event-listeners>
+    <event-listeners/>
     <task-event-listeners>
         <task-event-listener>
             <resolver>mvel</resolver>
