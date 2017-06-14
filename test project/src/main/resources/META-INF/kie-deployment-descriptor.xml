@@ -8,15 +8,15 @@
     <marshalling-strategies/>
     <event-listeners>
         <event-listener>
-            <resolver>reflection</resolver>
-            <identifier>com.test.jbpm.listeners.CustomProcessEventListener</identifier>
+            <resolver>mvel</resolver>
+            <identifier>new com.test.jbpm.listeners.CustomProcessEventListener()</identifier>
             <parameters/>
         </event-listener>
     </event-listeners>
     <task-event-listeners>
         <task-event-listener>
-            <resolver>reflection</resolver>
-            <identifier>com.test.jbpm.listeners.CustomTaskListnersService</identifier>
+            <resolver>mvel</resolver>
+            <identifier>new com.test.jbpm.listeners.CustomTaskListnersService(runtimeManager)</identifier>
             <parameters/>
         </task-event-listener>
     </task-event-listeners>
